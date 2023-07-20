@@ -1,0 +1,154 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*----------------------------------------------------------------------------------------------------------------- */
+
+:root {
+    --cor-primeria: #071952;
+    --cor-secundaria: #0B666A;
+    --cor-terciaria: #35A29F;
+    --cor-hover: #97FEED;
+
+    --fonte-pricipal: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Krona One', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+    box-sizing: border-box;
+    background-color: var(--cor-primeria);
+    color: var(--cor-terciaria);
+}
+
+header.cabecalho {
+    /*background-color: #494ed8;*/
+    padding-left: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+nav.menu_nav {
+    display: flex;
+    gap: 80px;
+}
+
+a.menu_botao {
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-pricipal);
+    text-decoration: none;
+}
+
+strong.azulado {
+    color: var(--cor-secundaria);
+}
+
+main.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.25% 15%;
+    gap: 82px;
+}
+
+section.flexbox_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1.title {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.25rem;
+}
+p.text_one {
+    font-family: var(--fonte-pricipal);
+    font-size: 1.5rem;
+}
+
+div.botton_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+a.botao {
+    /*background-color: #494ed8; */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border: solid 3px var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-pricipal);
+}
+
+img.minhafoto {
+    width: 50%;
+}
+
+/*Ativa ao passar mouse em cima*/
+a.botao:hover {
+    background-color: var(--cor-hover);
+}
+
+
+/*Ativa quando interagido*/
+/*a:active{
+    background-color: #FF0000;
+}*/
+
+/*Estiliza quando já visitei*/
+/*a:visited{
+    color: aquamarine;
+    background-color: aquamarine;
+}*/
+
+/*Estiliza o que não visitei*/
+/*a:link{
+    color: chocolate;
+}*/
+
+.rodape {
+    text-align: center;
+    padding: 28px;
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-pricipal);
+    font-weight: 400;
+}
+
+@media (max-width:1200px) {
+    header.cabecalho {
+        padding: 15%;
+    }
+
+    nav.menu_nav {
+        justify-content: center;
+    }
+
+    main.flexbox {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    section.flexbox_content {
+        width: auto;
+    }
+}
+
+
